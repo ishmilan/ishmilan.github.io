@@ -46,8 +46,8 @@ img{max-width:100%;}
 .translate nav a{margin:auto 0px;color:#FF4D09;font-weight:bolder;font-size:16px;padding:2px 5px;}
 #start{padding-top:60px;}
 .site-avatar{display:block;float:none;width:180px;height:180px;margin:20px auto;}
-.site-avatar img{border-radius:50%;height:100%;width:100%;border:solid5px #FF4D09;transition:0.4s;}
-.site-avatar img:hover{transform: scale(1.15);z-index:-10;}
+.site-avatar img{border-radius:50%;height:100%;width:100%;border:solid5px #FF4D09;transition:0.4s;z-index:-10;}
+.site-avatar img:hover{transform: scale(1.15);}
 .site-info{float:left;}
 
 .site-name{margin:0px auto;cursor:pointer;letter-spacing:1px;}
