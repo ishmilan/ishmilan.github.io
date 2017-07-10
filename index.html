@@ -28,7 +28,6 @@
 		});
 	</script>
 	<!-- End Google Analytics -->
-  </head>
 </head>
 <body>
 	<div class="wrapper-masthead">
@@ -42,7 +41,7 @@
 			<nav class="menunav">
 				<a href="/">Inicio</a>
 				<a href="/perfil/">Perfil</a>
-				<a href="https://colaboratorio.net/ishmilan/">Blog</a>
+				<a href="https://colaboratorio.net/ishmilan/" target="_blank">Blog</a>
 				<a href="#" id="contact">Contacto</a>
 			</nav>
 			<header class="translate clearfix">
@@ -65,7 +64,18 @@
         </div>
         <div id="main" role="main">
 			<h2 class="text-right">Administrador de Sistemas &amp; desarrollador de software.<br>Cáceres, España.</h2>
-			<div class="text-center" id="links"></div>
+			<div id="propic">
+				<img class="novisible" src="/cdn/img/profileColor.jpeg" >
+				<img src="/cdn/img/profile.jpeg" >
+			</div>
+			<div class="text-center" id="links">
+				<a class="button buttonToProfile" href="/perfil/#experiencia-laboral">Trabajo</a>
+				<a class="button buttonToProfile" href="/perfil/#educación">Educación</a>
+				<a class="button buttonToProfile" href="/perfil/#formación-adicional">Formación</a>
+				<a class="button buttonToProfile" href="/perfil/#habilidades">Habilidades</a>
+				<a class="button buttonToProfile" href="/perfil/#logros">Logros</a>
+				<a class="button buttonToProfile" href="/perfil/#idiomas">Idiomas</a>
+			</div>
 			<table class="profile-table">
 				<thead><tr><th class="title text-center" colspan="2">Experiencia laboral</th></tr></thead>
 				<tbody>
@@ -119,10 +129,6 @@
         </footer>
     </div>
     <script src="/cdn/js/main.js"></script>
-<script>
-document.querySelector("#links").innerHTML='\n\t<a class="button buttonToProfile" href="/perfil/#experiencia-laboral">Trabajo</a>\n\t<a class="button buttonToProfile" href="/perfil/#educación">Educación</a>\n\t<a class="button buttonToProfile" href="/perfil/#formación-adicional">Formación</a>\n\t<a class="button buttonToProfile" href="/perfil/#habilidades">Habilidades</a>\n\t<a class="button buttonToProfile" href="/perfil/#logros">Logros</a>\n\t<a class="button buttonToProfile" href="/perfil/#idiomas">Idiomas</a>\n';
-</script>
-
 <script type="application/ld+json">
 	{ "@context" : "https://schema.org",
 		"@type" : "WebSite",
