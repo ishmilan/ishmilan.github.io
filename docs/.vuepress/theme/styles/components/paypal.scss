@@ -1,0 +1,23 @@
+.paypalme-button {
+    font-size: 0.8rem;
+    color: $secondary;
+    border: solid 3px #282a36;
+    border-radius: 1rem;
+    padding: 0.2rem 1rem 0.3rem 0.3rem;
+    display: inline-block;
+    text-decoration: none;
+    img {
+        height: 1rem;
+        vertical-align: bottom;
+        margin: 0 0.3rem;
+    }
+    &.custom.custom:hover {
+        background: $secondary;
+        color: white;
+        text-decoration: none;
+
+        img {
+            filter: invert(1);
+        }
+    }
+}

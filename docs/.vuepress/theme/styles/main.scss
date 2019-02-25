@@ -1,0 +1,44 @@
+@import './00-setting/settings';
+
+body {
+    background: url("/vuepress/images/background.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    a {
+        color: $primary;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $accentColor2;
+        }
+    }
+}
+
+// code
+.content {
+
+    pre,
+    pre[class*="language-"] {
+        line-height: 1.4;
+        padding: 1.25rem 1.5rem;
+        margin: 1rem 0;
+        background-color: $codeBgColor;
+        border-radius: 3px;
+        overflow: auto;
+        border-left: solid 4px $primary;
+        color: $arrowBgColor;
+    }
+}
+.title {
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+    border: none;
+}
+@import './components/navbar';
+@import './components/index';
+@import './components/presentation';
+@import './components/ish-card';
+@import './components/tooltip';
+@import './components/paypal';
