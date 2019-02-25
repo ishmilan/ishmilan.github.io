@@ -24,7 +24,7 @@ deploy:
     skip-cleanup: true
     local_dir: public
     github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-    repo: ishmilan.github.io
+    repo: ishmilan/ishmilan.github.io
     keep-history: true
     target-branch: master
     on:
