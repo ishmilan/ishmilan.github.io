@@ -11,7 +11,7 @@ addons:
             - g++-4.8
 install:
     - npm install -g vuepress
-    - npm installs
+    - npm install
 script:
     - npm run docs:build
 cache:
