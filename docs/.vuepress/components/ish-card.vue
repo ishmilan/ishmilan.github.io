@@ -27,7 +27,7 @@
     >
       <div v-for="lang in card.langs" class="lang">
         <div v-bind:class="'lang lang--dot ' + lang.name"></div>
-        <strong>{{lang.name === 'JavaScript' ? 'JS' : lang.name }}</strong>
+        <strong>{{lang.name==='JavaScript' ? 'JS' : lang.name}}</strong>
         {{(100 * lang.lines / card.lines).toFixed(2) + '%'}}
       </div>
     </div>

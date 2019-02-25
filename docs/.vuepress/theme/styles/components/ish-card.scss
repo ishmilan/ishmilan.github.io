@@ -66,6 +66,7 @@
     }
 
     &__description {
+        text-align: justify;
         min-height: 4rem;
     }
 
@@ -113,8 +114,8 @@
     text-align: center;
     cursor: help;
     position: relative;
-    font-size: 0.5rem;
     letter-spacing: -1px;
+    font-size: 0.5rem;
 
     strong {
         font-size: 0.6rem;
