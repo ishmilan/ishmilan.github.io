@@ -1,0 +1,11 @@
+#! /bin/bash
+if [ "$?" -ne "0" ]; then
+  echo "Sorry, we had a problem there!"
+  exit 0
+fi
+vuepress build docs/
+mv ./public/* ./
+rm -rf ./public
+git add .
+git commit -m $1
+git push origin master
