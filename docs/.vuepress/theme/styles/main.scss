@@ -36,9 +36,13 @@ body {
     text-align: center;
     border: none;
 }
+.page-edit {
+    display: none;
+}
 @import './components/navbar';
 @import './components/index';
 @import './components/presentation';
 @import './components/ish-card';
 @import './components/tooltip';
 @import './components/paypal';
+@import './components/timeline';

@@ -1,11 +1,12 @@
 #! /bin/bash
-if [ "$?" -ne "0" ]; then
-  echo "Sorry, we had a problem there!"
+if [ -z "$1" ]
+then
+  echo "Please, write a message for this commit"
   exit 0
 fi
 vuepress build docs/
 cp -r ./public/* ./
-rm -rf ./public
+rm -rf ./public/
 git add .
 git commit -m $1
 git push origin master
