@@ -6,7 +6,7 @@
             location="Sevilla, España"
             picture="/images/profile.jpeg"
             picture-background="/images/profileColor.jpeg"
-            profile="https://avatars0.githubusercontent.com/u/9059414?v=3&s=256"
+            profile="/images/logo.png"
         ></ish-profile>
     </a>
     <ish-repositories></ish-repositories>

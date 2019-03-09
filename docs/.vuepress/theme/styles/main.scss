@@ -59,6 +59,9 @@ body {
     .card {
         width: calc(50% - 2rem);
         margin: 1rem;
+        @media (max-width: 720px) {
+            width: calc(100% - 2rem);
+        }
         h4, p {
             margin: 0;
         }
