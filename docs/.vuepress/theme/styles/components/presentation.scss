@@ -43,7 +43,7 @@
 
         @media (max-width: 720px) {
             background-size: 100% 100%;
-            max-width: unset;
+            max-width: 100%;
             height: calc(100vw - 4rem);
             width: calc(100vw - 4rem);
         }

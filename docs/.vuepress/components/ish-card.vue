@@ -2,36 +2,28 @@
   <div class="git-card">
     <div class="git-card__title">
       <a
-        :href="'https://github.com/'+username+'/'+project"
+        :href="'https://github.com/'+username+'/'+(card && card.title ? card.title : '')"
         title="ver el repositorio"
       >{{card && card.title ? card.title : ''}}</a>
     </div>
     <div class="git-card__license" v-if="card && card.license">{{card.license}}</div>
     <div class="git-card__description">{{card && card.description ? card.description : ''}}</div>
     <div class="git-card__donation">
-      <a
-        class="paypalme-button custom"
+      <ish-button
         href="https://www.paypal.me/ishmilan/1.5"
-        target="_blank"
-        rel="nofollow"
-        title="ir a paypal"
-      >
-        <img src="https://www.paypalobjects.com/webstatic/icon/pp32.png" alt="paypal logo">
-        invítame a un café
-      </a>
+        img="https://www.paypalobjects.com/webstatic/icon/pp32.png"
+        text="invítame a un café"
+        >
+      </ish-button>
     </div>
-    <div
-      class="git-card__lang git-card__lang--text"
-      v-if="card && card.langs"
-      v-bind:class="{ 'git-card__lang--active': isActive }"
-    >
+    <div class="git-card__lang git-card__lang--text" v-if="card && card.langs">
       <div v-for="lang in card.langs" class="lang">
         <div v-bind:class="'lang lang--dot ' + lang.name"></div>
         <strong>{{lang.name==='JavaScript' ? 'JS' : lang.name}}</strong>
         {{(100 * lang.lines / card.lines).toFixed(2) + '%'}}
       </div>
     </div>
-    <div class="git-card__lang" v-if="card && card.langs" v-on:click="isActive =! isActive">
+    <div class="git-card__lang" v-if="card && card.langs">
       <div
         v-for="lang in card.langs"
         v-bind:class="'lang ' + lang.name"
@@ -49,7 +41,6 @@ export default {
   },
   data() {
     return {
-      isActive: false,
       card: {
         title: this.project.title,
         license: this.project.license,
@@ -91,7 +82,9 @@ export default {
             langs.push({ name: lang, lines: response.data[lang] });
             lines += response.data[lang];
           }
-          this.card.langs = langs;
+          this.card.langs = langs.filter(lang=>{
+            return ((100 * lang.lines / lines) > 0.5);
+          });
           this.card.lines = lines;
           localStorage.setItem(
             `github-${this.username}-${this.project.title}`,

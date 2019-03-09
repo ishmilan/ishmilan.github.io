@@ -24,10 +24,10 @@ module.exports = {
                 text: 'Perfil',
                 link: '/profile/'
             },
-            // {
-            //     text: 'Contacto',
-            //     link: 'https://ishmilan.github.io/'
-            // },
+            {
+                text: 'Contacto',
+                link: '/contact/'
+            }
         ]
     },
     module: {
