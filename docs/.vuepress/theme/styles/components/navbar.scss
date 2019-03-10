@@ -89,8 +89,8 @@ body .navbar {
                 }
 
                 &.router-link-active {
-                    border-bottom: 4px solid $primary;
-                    color: $primary;
+                    border: none;
+                    color: $borderColor;
                     margin: 0;
                     box-sizing: border-box;
                     height: 100%;
@@ -114,13 +114,13 @@ body .navbar {
 }
 
 body .sidebar-mask {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 body .sidebar {
-    box-shadow: 0 0 5px rgb(44, 62, 80);
+    box-shadow: 0 0 5px $secondary;
     transform: translateX(-150%);
-    background: $borderColor;
+    background: $secondary;
     border-radius: 3px;
     min-width: 9rem;
     bottom: unset;
@@ -154,8 +154,7 @@ body .sidebar {
                 }
 
                 &.router-link-active {
-                    border-bottom: 2px solid $primary;
-                    color: $primary;
+                    color: $borderColor;
                     box-sizing: border-box;
                     pointer-events: none;
 
