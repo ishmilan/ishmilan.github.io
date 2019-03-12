@@ -1,5 +1,7 @@
 <div class="card">
     <h2 class="title">Perfil</h2>
+</div>
+<div class="card">
     <h3>Habilidades</h3>
     <div class="card-group">
         <div class="card">
@@ -27,6 +29,8 @@
             <p>Git (GUI & CLI)</p>
         </div>
     </div>
+</div>
+<div class="card">
     <h3>Mi recorrido</h3>
     <ish-timeline></ish-timeline>
 </div>

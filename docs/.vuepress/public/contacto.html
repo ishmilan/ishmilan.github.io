@@ -237,7 +237,7 @@ body, * {
     width: calc(100% - 2rem);
     border-radius: 1.25rem;
     border: solid 3px #282a36;
-    padding: 0.25rem;
+    padding: 0.3rem;
     background: white;
     color: #282a36;
     text-transform: uppercase;
@@ -248,8 +248,11 @@ body, * {
 .quantumWizButtonPaperbuttonEl:focus,
 .quantumWizButtonPaperbuttonEl:active{
     background: #282a36;
+}
+.quantumWizButtonPaperbuttonEl:hover .quantumWizButtonPaperbuttonLabel,
+.quantumWizButtonPaperbuttonEl:focus .quantumWizButtonPaperbuttonLabel,
+.quantumWizButtonPaperbuttonEl:active .quantumWizButtonPaperbuttonLabel{
     color: #ff5005;
-
 }
 .quantumWizButtonPaperbuttonEl:active{
     position: relative;

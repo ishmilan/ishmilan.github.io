@@ -7,11 +7,13 @@
         padding: 0.2rem 1rem 0.3rem 0.3rem;
         display: inline-block;
         text-decoration: none;
+        transition: background 0.3s linear, color 0.4s linear;
         img {
             height: 1rem;
             vertical-align: bottom;
             margin: 0 0.3rem;
             transform: scale(1.25);
+            transition: filter 0.4s linear;
         }
         &__text {
             position: relative;
